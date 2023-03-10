@@ -1,6 +1,8 @@
 import re
 from difflib import SequenceMatcher
 
+
+
 class StringModification():
     
     @staticmethod
@@ -145,7 +147,6 @@ class Direccion(object):
             (OBLIGATORIO)   número del edificio
             (OPCIONAL)      Numero o letra de bloque
 
-
     Ej.
         >>> dir= 'Calle Marqués de Viana 59 2ºC'
         >>> calle= Direcciones(dir)
@@ -158,9 +159,6 @@ class Direccion(object):
         >>> calle.es        # None
         >>> calle.pl        # 2
         >>> calle.pt        # C
-
-
-
     '''
     street_sep="-"
     num_sep=","
@@ -216,7 +214,6 @@ class Direccion(object):
     
     def __str__(self) -> string:
         return self.strformat
-
 
     @property
     def strformat(self):
@@ -429,8 +426,6 @@ class Direccion(object):
         
         return str(f"{int(obj):02d}")
         
-
-
 
 
 
