@@ -8,15 +8,14 @@ Para el correcto funcionamiento de esta clase, la dirección debe cumplir con:
         (OBLIGATORIO)   número del edificio
         (OPCIONAL)      Numero o letra de bloque
 
-Ej.
-    >>> dir= 'Calle Marqués de Viana 59 2ºC'
-    >>> calle= Direcciones(dir)
+>>> dir= 'Calle Marqués de Viana 59 2ºC'
+>>> calle= Direcciones(dir)
 
-    >>> calle           # MARQUES DE VIANA 59
-    >>> calle.streets   # ['MARQUES DE VIANA 59]
-    >>> calle.type_via  # CALLE
-    >>> calle.via       # MARQUES DE VIANA
-    >>> calle.num       # 59
-    >>> calle.es        # None
-    >>> calle.pl        # 2
-    >>> calle.pt        # C
+>>> calle           # MARQUES DE VIANA 59
+>>> calle.streets   # ['MARQUES DE VIANA 59]
+>>> calle.type_via  # CALLE
+>>> calle.via       # MARQUES DE VIANA
+>>> calle.num       # 59
+>>> calle.es        # None
+>>> calle.pl        # 2
+>>> calle.pt        # C
